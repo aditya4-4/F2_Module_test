@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Student Portal</title>
+  </head>
+  <body>
+    <div class="heading-profile">
+      <p class="heading-name">Student Portal</p>
+    </div>
+
+    <div class="content-Section">
+        
+        <div class="search-bar-section">
+            <input type="text" name="" id="searchInput" placeholder="Search">
+            <button type="button" id="searchBtn">Search</button>
+        </div>
+
+        <div class="sorting-btn">
+            <button type="button" class="sort-btn" id="AtoZ">Sort A<span>&rarr;</span>Z</button>
+            <button type="button" class="sort-btn" id="ZtoA">Sort Z<span>&rarr;</span>A</button>
+            <button type="button" class="sort-btn" id="marks">Sort By Marks</button>
+            <button type="button" class="sort-btn" id="passing">Sort By Passing</button>
+            <button type="button" class="sort-btn" id="classSort">Sort By Class</button>
+            <button type="button" class="sort-btn" id="gender">Sort By Gender</button>
+        </div>
+
+        <div class="table-content">
+            <table class="table-section" id="table-section" >
+              <thead id="table-header">
+                <tr id="rows">
+                    <td id="id-cell" class="cell-content">id</td>
+                    <td id="name-cell" class="cell-content">Name</td>
+                    <td id="gender-cell" class="cell-content">Gender</td>
+                    <td id="class-cell" class="cell-content">Class</td>
+                    <td id="marks-cell" class="cell-content">Marks</td>
+                    <td id="passing-cell" class="cell-content">Passing</td>
+                    <td id="email-cell" class="cell-content">Email</td>  
+                </tr>
+              </thead>
+                <tbody id="table-body">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Script  -->
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
